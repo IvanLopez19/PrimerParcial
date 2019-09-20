@@ -74,6 +74,7 @@ p{
 .big-hero p {
     font-size: 0.7em;;
     color: #D7DEE6;
+    margin-bottom: -5em;
 
 }
 
@@ -86,6 +87,10 @@ p{
     flex-direction: row;
     justify-content: center;
     height: auto;
+}
+
+.social-links li{
+    margin:0 1em;
 }
 
 .social-links li a{
@@ -300,6 +305,7 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+    
 
 
 
