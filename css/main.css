@@ -21,7 +21,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    border: #ffffff solid 1px;
 }
 
 .src-only {
@@ -102,6 +101,7 @@ p{
 }
 
 
+/*green area*/
 .green-area {
     background-color: #0AC693; 
 }
@@ -329,6 +329,13 @@ footer .social-links {
     .about h2{
         grid-column-start: 1;
         grid-column-end: -1;
+    }
+
+    .big-hero .show-desktop i{
+        font-size: 3em;
+        color: #0AC693;
+        position: relative;
+        top: -0.7em;
     }
     
 
