@@ -279,6 +279,10 @@ footer .social-links {
     
 }
 
+.menu li a:hover{
+    color: #F74442;
+}
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   /*telegon*/
@@ -319,6 +323,8 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
+
+    
 
     .about .container{
         display: grid;
