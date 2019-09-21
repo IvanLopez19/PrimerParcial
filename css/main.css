@@ -208,6 +208,10 @@ p{
     width: 100%;
 }
 
+.bio-info , .contact{
+    padding: 2em;
+}
+
 /* footer*/
 
 footer .social-links li{
@@ -314,6 +318,17 @@ footer .social-links {
         height:auto;
         display: flex;
         margin-top: 1em;
+    }
+
+    .about .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px, 1fr;
+    }
+
+    .about h2{
+        grid-column-start: 1;
+        grid-column-end: -1;
     }
     
 
