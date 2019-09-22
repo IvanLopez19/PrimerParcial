@@ -213,6 +213,7 @@ p{
 /*agrega margen a la seccion del about*/
 .about{
     margin-top: 2em;
+    margin-bottom: 3em;
 }
 
 /* configura estilo al titulo de la seccion about*/
@@ -307,6 +308,12 @@ footer .social-links li{
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
+}
+
+/*ajusta la posicion del parrafo que se encuentra en el footer*/
+footer p{
+    position: relative;
+    top: -2.5em;
 }
 
 /*footer .social-links {
