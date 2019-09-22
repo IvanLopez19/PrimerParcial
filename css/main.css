@@ -313,6 +313,8 @@ footer{
     margin: 0;
 }*/
 
+/* agrega el estilo de la lista de opciones de la lista de
+   navegacion*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -323,23 +325,28 @@ footer{
     height: calc(100vh - 60px);
 }
 
+/* le quita las viñetas a la lista de opciones y la posiciona a la izquierda*/
 .menu {
     list-style: none;
     text-align: left;
     padding: 1em;
 }
+
+/*agrega padding y margin a cada uno de los elementos de las opciones del header*/
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
 
+/* le da estilo al texto de cada uno de los elementos de las opciones del header*/
 .menu li a {
     color: white;
     text-decoration: none;
     
 }
 
+/* agrega hover a los elementos de las opciones del header*/
 .menu li a:hover{
     color: #F74442;
 }
@@ -347,6 +354,9 @@ footer{
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   /*telegon*/
+
+  /*hace que los articulos de la green area se desplacen horizontalmente 
+    cuando hay espacio suficiente*/
     .post ul {
         list-style: none;
         display: flex;
@@ -354,6 +364,7 @@ footer{
         justify-content: center;
     }
     
+    /*configura el estilo de los articulos de la green area*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -367,14 +378,20 @@ footer{
         margin: 1.5em;
     }
 
+    /* mustra ciertas cosas que estaban ocultas para la version mobil,
+       como por ejemplo las opciones en el header o el icono de flecha
+       hacia abajo*/
     .show-desktop {
         display: block;
     }
 
+    /* oculta ciertas cosas que solo estan disponibles para la version de mobil
+       como por ejemplo el icono de las barras el header*/
     .hide-desktop {
         display: none;
     }
 
+    /* configura el estilo de las opciones del header*/
     .menu {
         background-color: #112935; 
         position: static;
@@ -385,19 +402,20 @@ footer{
         margin-top: 1em;
     }
 
-    
-
+    /* aplica un grid al about para poder organizar los elementos*/
     .about .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px, 1fr;
     }
 
+    /* asigna la posicion del titulo del about con respecto al grid*/
     .about h2{
         grid-column-start: 1;
         grid-column-end: -1;
     }
 
+    /* agrega estilo al icono de flecha hacia abajo*/
     .big-hero .show-desktop i{
         font-size: 3em;
         color: #0AC693;
@@ -414,12 +432,15 @@ footer{
 
 @media only screen and (min-width: 1024px) {
 /*tablet*/
+
+    /* aplica un grid al about para poder organizar los elementos*/
     .about .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px, 1fr;
     }
 
+    /* asigna la posicion del titulo del about con respecto al grid*/
     .about h2{
         grid-column-start: 1;
         grid-column-end: -1;
@@ -430,9 +451,24 @@ footer{
 @media only screen and (min-width: 1440px) {
 /*ipad*/
     /*TODO: FALTA CSS */
+
+    /* hace que el ancho de la pagina web no pueda crecer mas de 1440px*/
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    /* aplica un grid al about para poder organizar los elementos*/
+    .about .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px, 1fr;
+    }
+
+    /* asigna la posicion del titulo del about con respecto al grid*/
+    .about h2{
+        grid-column-start: 1;
+        grid-column-end: -1;
     }
 }
